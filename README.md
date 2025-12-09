@@ -1,2 +1,1 @@
-# entelijanpy
-Some useful python scripts
+## Useful python scripts
