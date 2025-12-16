@@ -11,6 +11,7 @@ from enum import Enum
 class Resolution(Enum):
     HD = "HD"
     FullHD = "Full-HD"
+    FullHD_P = "Full-HD-P"
     UHD4k = "4k-UHD"
     UHD8k = "8k-UHD"
 
@@ -20,6 +21,8 @@ class Resolution(Enum):
                 return 1280
             case Resolution.FullHD:
                 return 1920
+            case Resolution.FullHD_P:
+                return 1080
             case Resolution.UHD4k:
                 return 3840
             case Resolution.UHD8k:
@@ -31,6 +34,8 @@ class Resolution(Enum):
                 return 720
             case Resolution.FullHD:
                 return 1080
+            case Resolution.FullHD_P:
+                return 1920
             case Resolution.UHD4k:
                 return 2160
             case Resolution.UHD8k:
