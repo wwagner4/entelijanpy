@@ -1,5 +1,6 @@
 import typer
 import entelijanpy.for_tv as _ft
+import entelijanpy.testimages as _ti
 from pathlib import Path
 
 app = typer.Typer()
@@ -24,6 +25,15 @@ def video(
     out_dir: Path | None = None,
 ) -> None:
     _ft.video(name, in_dir, pause, resolution, out_dir)
+
+
+@app.command(help="Create testimages for blechoderblume")
+def testimages(
+    in_dir: Path,
+    name: str,
+    out_dir: Path | None = None,
+) -> None:
+    _ti.testimages(name, in_dir, out_dir)
 
 
 if __name__ == "__main__":
